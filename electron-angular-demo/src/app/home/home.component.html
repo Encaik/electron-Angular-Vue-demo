@@ -1,0 +1,8 @@
+<div class="container">
+  <!--  <a routerLink="/detail">{{ "PAGES.HOME.GO_TO_DETAIL" | translate }}</a> -->
+  <button (click)="min()">最小化</button>
+  <button *ngIf="!isMax" (click)="max()">最大化</button>
+  <button *ngIf="isMax" (click)="unmax()">取消最大化</button>
+  <button (click)="close()">关闭</button>
+  <button (click)="login()">登录</button>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <button (click)="min()">最小化</button>
+  <button *ngIf="!isMax" (click)="max()">最大化</button>
+  <button *ngIf="isMax" (click)="unmax()">取消最大化</button>
+  <button (click)="close()">关闭</button>
+  <h1 class="title">
+    {{ "PAGES.DETAIL.TITLE" | translate }}
+  </h1>
+</div>
